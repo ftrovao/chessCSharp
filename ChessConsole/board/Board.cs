@@ -25,6 +25,7 @@ namespace ChessConsole.board
             return pieces[row, column];
         }
 
+
         public Piece piece(Position pos)
         {
             return pieces[pos.row, pos.column];

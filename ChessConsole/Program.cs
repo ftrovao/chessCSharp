@@ -1,4 +1,5 @@
 ﻿using board;
+using ChessConsole;
 using ChessConsole.board;
 
 
@@ -12,6 +13,8 @@ internal class Program
         Console.WriteLine(position);
 
         Board tab = new Board(8, 8);
+
+        Screen.printBoard(tab);
 
 
     }

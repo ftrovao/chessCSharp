@@ -34,6 +34,8 @@ namespace ChessConsole.board
             MoveCount++;
         }
 
+
+
         //public void DecrementMoveCount()
         //{
         //    MoveCount--;
