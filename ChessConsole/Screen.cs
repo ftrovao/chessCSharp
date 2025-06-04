@@ -32,7 +32,7 @@ namespace ChessConsole
         //}
 
 
-
+        //methode pour tester et afficher le board
         public static void printBoard(Board board)
         {
             for (int i = 0; i < board.rows; i++)
@@ -55,7 +55,7 @@ namespace ChessConsole
             }
             Console.WriteLine("  a b c d e f g h");
         }
-
+        //=================================================
 
 
 

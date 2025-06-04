@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace board
 {
-    enum Color
+    enum Colour
     {
         White,
         Black

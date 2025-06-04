@@ -37,15 +37,15 @@ namespace ChessConsole.board
         //    return piece(pos) != null;
         //}
 
-        //public void placePiece(Piece p, Position pos)
-        //{
-        //    if (existsPiece(pos))
-        //    {
-        //        throw new BoardException("There is already a piece at this position!");
-        //    }
-        //    pieces[pos.row, pos.column] = p;
-        //    p.position = pos;
-        //}
+        public void placePiece(Piece p, Position pos)
+        {
+            //if (existsPiece(pos))
+            //{
+            //    throw new BoardException("There is already a piece at this position!");
+            //}
+            pieces[pos.row, pos.column] = p;
+            p.Position = pos;
+        }
 
         //public Piece removePiece(Position pos)
         //{

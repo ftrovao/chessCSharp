@@ -11,7 +11,7 @@ namespace ChessConsole.board
     {
 
         public Position Position { get; set; }
-        public Color Color { get; protected set; }
+        public Colour Color { get; protected set; }
         public int MoveCount { get; protected set; }
         //============================
         //The board "has" the pieces(it stores and manages them).
@@ -21,7 +21,7 @@ namespace ChessConsole.board
         public Board GameBoard { get; protected set; }
 
 
-        public Piece(Board board, Color color)
+        public Piece(Board board, Colour color)
         {
             this.Position = null;
             this.GameBoard = board;
