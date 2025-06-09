@@ -45,8 +45,11 @@ namespace ChessConsole.board
             {
                 throw new BoardException("There is already a piece at this position!");
             }
-            pieces[pos.row, pos.column] = p;
             p.Position = pos;
+            pieces[pos.row, pos.column] = p;
+          
+            //p.Position = pos;* check why this is put after Piece was added to matrix
+            Console.WriteLine("p.position" + p.Position.row);
         }
 
         //public Piece removePiece(Position pos)

@@ -20,7 +20,7 @@ namespace ChessConsole.chess
         {
            
         }
-
+        
         public override string ToString()
         {
             return "K";
