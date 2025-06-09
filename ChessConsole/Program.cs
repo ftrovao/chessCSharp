@@ -16,16 +16,16 @@ internal class Program
 
             //Console.WriteLine(position);
 
-            //Board board = new Board(8, 8);
+            Board board = new Board(8, 8);
 
 
-            //board.placePiece(new Rook(board, Colour.Black), new Position(0, 0));
+            board.placePiece(new Rook(board, Colour.White), new Position(0, 0));
             //board.placePiece(new Rook(board, Colour.Black), new Position(1, 3));
             ////tab.placePiece(new King(tab, Colour.Black), new Position(2, 4));
             ////tab.placePiece(new King(tab, Colour.Black), new Position(0, 0));
 
 
-            //Screen.printBoard(board);
+            Screen.printBoard(board);
 
             //PositionChess Test
             PositionChess pos = new PositionChess('a', 1);

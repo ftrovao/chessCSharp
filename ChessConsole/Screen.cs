@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using board;
 using ChessConsole.board;
 
 namespace ChessConsole
@@ -37,7 +39,7 @@ namespace ChessConsole
         {
             for (int i = 0; i < board.rows; i++)
             {
-                //Console.Write(8 - i + " ");
+                Console.Write(8 - i + " ");
                 for (int j = 0; j < board.columns; j++)
                 {
                     if(board.piece(i,j) == null)
@@ -46,7 +48,11 @@ namespace ChessConsole
                     }
                     else
                     {
-                        Console.Write(board.piece(i,j)+ " ");
+                        Screen.PrintPiece(board.piece(i,j));
+                        //Console.Write(" ");
+
+
+                        //Console.Write(board.piece(i,j)+ " ");
                     }
                     
                     //printPiece(board.piece(i, j));
@@ -57,7 +63,28 @@ namespace ChessConsole
         }
         //=================================================
 
-
+        public static void PrintPiece(Piece piece)
+        {
+            if (piece == null)
+            {
+                Console.Write("- ");
+            }
+            else
+            {
+                if (piece.Color == Colour.Black)
+                {
+                    Console.Write(piece);
+                }
+                else
+                {
+                    ConsoleColor temp = Console.ForegroundColor;
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.Write(piece);
+                    Console.ForegroundColor = temp;
+                }
+                Console.Write(" ");
+            }
+        }
 
 
     }
